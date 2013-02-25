@@ -1,0 +1,1207 @@
+@charset "utf-8";
+
+/* reset.css */
+html {margin:0;padding:0;border:0;}
+body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, dialog, figure, footer, header, hgroup, nav, section {margin:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
+article, aside, details, figcaption, figure, dialog, footer, header, hgroup, menu, nav, section {display:block;}
+body {line-height:1.5;background:#FFFFFF;}
+table {border-collapse:separate;}
+caption, th, td {text-align:left;font-weight:normal;float:none !important;}
+table, th, td {vertical-align:middle;}
+blockquote:before, blockquote:after, q:before, q:after {content:'';}
+blockquote, q {quotes:"" "";}
+a img {border:none;}
+:focus {outline:0;}
+
+/*float elements ------
+-------------------------------------------------------------- */
+.right      { float: right !important; }
+.left       { float: left !important; }
+.float-none {float:none !important;}
+.clear, .extender {
+  clear: both;
+  display: block;     
+}
+
+/*Typography and Headings ------
+-------------------------------------------------------------- */
+/* Default font settings.
+   The font-size percentage is of 16px. (0.75 * 16px = 12px) */
+html { font-size:100.01%; }
+body {
+    margin:0 auto;
+    min-width: 960px;
+    text-align: left;
+    font-size: 75%; color: #666666; font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+    background: url("/assets/en_US/ccms_img/insight-home-backtile-2011.gif") repeat-x scroll 0 0 #f9f9f9;
+    height: auto;
+}
+/* Padding for Body
+----------------------------------------------------------------------------------------------------*/
+.content
+{
+    padding:10px;   
+}
+/* Headings
+-------------------------------------------------------------- */
+h1,h2,h3,h4,h5,h6 {
+    font-weight: normal;
+    color: #333;
+}
+h1 { font-size: 1.8em; line-height: 1;border-bottom:1px solid #DDDDDD;padding-bottom:5px;}
+h2 { font-size: 1.5em;line-height: 1.3; color:#444444; border-bottom:1px dotted #333333;margin-bottom:5px; }
+h3 { font-size: 1.2em; line-height: 1; color:#444444;  }
+h4 { font-size: 1em; line-height: 1.25; color:#444444;  }
+h5 { font-size: 1em; font-weight: bold; }
+h6 { font-size: .90em; font-weight: bold; }
+
+h1 img, h2 img, h3 img, h4 img, h5 img, h6 img {
+  margin: 0;
+}
+/* Text elements with images
+-------------------------------------------------------------- */
+/*
+  These can be used to pull an image at the start of a paragraph, so
+  that the text flows around it (usage: <p><img class="left">Text</p>)*/
+p           { margin: 0 0 1.5em; } 
+p .left     { margin: 1.5em 1.5em 1.5em 0; padding: 0; }
+p .right    { margin: 1.5em 0 1.5em 1.5em; padding: 0; }
+/*Link or Anchor Styling*/      
+a img{
+    border:0;   
+}   
+a:focus,
+a:hover     { color: #61b3d5; text-decoration: underline; }
+a { color: #0073B0; text-decoration: none; font-weight:normal;}
+blockquote  { margin: 1.5em; font-style: italic; }
+strong,dfn  { font-weight: bold; }
+em,dfn      { font-style: italic; }
+sup, sub    { line-height: 0; }
+
+abbr, acronym {
+    border-bottom: 1px dotted #666;
+    color: #666;
+}
+address     { margin: 0 0 1.5em; font-style: italic; }
+del         { color:#666666; }
+pre         { margin: 1.5em 0; white-space: pre; }
+pre,code,tt { font: 1em 'andale mono', 'lucida console', monospace; line-height: 1.5; }
+
+form        {text-align:left;}
+/* Lists
+-------------------------------------------------------------- */
+ul, ol {
+    padding:0;
+    margin:0;   
+    text-align:left;
+}
+ul li, ol li {
+    margin-left:15px;
+}
+ul     { list-style-type: disc; }
+ol     { list-style-type: decimal; }
+dl     { margin: 0 0 1.5em 0; }
+dl dt  { font-weight: bold; }
+dd     { margin-left: 1.5em;}       
+/* Tables
+-------------------------------------------------------------- */
+/*
+  Because of the need for padding on TH and TD, the vertical rhythm
+  on table cells has to be 27px, instead of the standard 18px or 36px
+  of other elements.
+ */
+table.tableMain { margin-bottom: 1.4em; width:100%; border: solid 1px #888888; table-layout:fixed;border-collapse: collapse;}
+table.tableMain th { color:#333333;font-size: 1em; font-weight: bold; border-bottom: solid 1px #888888; background: #cccccc; background-color:#ccc; margin: 0;padding: 4px 10px 4px 5px; }
+table.tableMain thead th { color:#333333;background: #ccc; background-color:#ccc;}
+table.tableMain > tbody > tr > td { border-bottom: solid 1px #888888;}
+table.tableMain td, table.tableMain tr, table.tableMain caption { padding: 4px 10px 4px 5px;}
+
+
+.tableMain .sub-table {border-collapse:collapse;}
+.tableMain .sub-table th, .tableMain .sub-table td {border: 1px solid #333333;}
+
+/*
+  Zebra-stripe your tables--Add the class "even" to every other table row. 
+ */
+.even   {
+    background: #eeeeee;
+    background-color: #eeeeee;
+}
+table.tableMain > tbody > tr:hover, table.tableMain > tbody > tr.even:hover  {
+    background: #FFF8DC ;   
+}           
+table.tableMain tfoot       { background-color:#ddd; font-weight:bolder; font-size:inherit; margin-bottom:inherit;padding: 4px 10px 4px 5px;}
+caption     { background: #444444;  background-color: #444444; color:#ffffff; font-weight:bold; border:inherit;}
+caption  strong  { text-transform:uppercase; }
+table.tableMain  tr h2      
+            { color: #333333;background-color:#ddd; border-bottom: solid 1px #888888; font-weight:bold; font-size:1em; margin: -4px -10px -5px -5px;padding: 4px 10px 4px 5px; line-height:inherit; }
+table.tableMain  tr h3      
+            { color: #333333; background-color:#ccc; border-bottom: solid 1px #888888; font-weight:bold; font-size:1em; margin: -4px -10px -5px -5px; padding: 4px 10px 4px 5px; line-height:inherit; }
+
+/* Standard buttons
+----------------------------------------------------------------------------------------------------*/
+.buttons { clear:both; padding:2px;}
+.buttons a, .buttons a:link {   
+    margin-right:5px;
+    float:left;
+    text-decoration: none;  
+    font: 11px "Arial", Helvetica, sans-serif !important;
+    font-weight: bold !important;   
+    text-transform:uppercase;   
+}
+.buttons a span { padding: 0px 5px 0px 5px; float:left; line-height:22px;cursor: pointer;}
+.inline { clear:none; padding-left:5px; }
+.buttons a.grey{ color:#FFFFFF !important;background: url(/assets/en_US/ccms_img/buttons/btn-back-gry-122211.png) no-repeat top right;}   
+.buttons a.grey span:hover {background: url(/assets/en_US/ccms_img/buttons/btn-back-gry-122211.png) no-repeat top right; color:#dddddd}  
+.buttons a.grey span {background: url(/assets/en_US/ccms_img/buttons/btn-back-gry-122211.png) repeat-y top left; } 
+.buttons a.green {color:#FFFFFF  !important; background: url(/assets/en_US/ccms_img/buttons/btn-back-grn-122211.png) repeat-y top right;}
+.buttons a.green span:hover {background: url(/assets/en_US/ccms_img/buttons/btn-back-grn-122211.png) no-repeat top right;color:#dddddd}
+.buttons a.green span {background: url(/assets/en_US/ccms_img/buttons/btn-back-grn-122211.png) no-repeat top left;}
+.buttons a.orange {background: url(/assets/en_US/ccms_img/buttons/btn-back-orng-122211.png) no-repeat top right; color:#333333 !important;}
+.buttons a.orange span:hover {background: url(/assets/en_US/ccms_img/buttons/btn-back-orng-122211.png) no-repeat top right; color:#525252}
+.buttons a.orange span {background: url(/assets/en_US/ccms_img/buttons/btn-back-orng-122211.png) no-repeat top left;}  
+.buttons a.red {background: url(/assets/en_US/ccms_img/buttons/btn-back-red-122211.png) no-repeat top right; color:#ffffff  !important;}
+.buttons a.red span:hover {background: url(/assets/en_US/ccms_img/buttons/btn-back-red-122211.png) no-repeat top right; color:#dddddd}
+.buttons a.red span {background: url(/assets/en_US/ccms_img/buttons/btn-back-red-122211.png) no-repeat top left;} 
+.buttons a.ltgrey {background: url(/assets/en_US/ccms_img/buttons/btn-back-ltgry-122211.png) no-repeat top right; color:#ffffff  !important;}
+.buttons a.ltgrey span {background: url(/assets/en_US/ccms_img/buttons/btn-back-ltgry-122211.png) no-repeat top left;}
+.buttons a.ltgrey span:hover {cursor:default;}
+
+
+.center-buttons { clear:both; text-align:center;}
+.center-buttons a, div.center-buttons a:link {  
+    float:none; 
+}
+
+.center-buttons a span {
+    float:none;
+    padding: 4px;   
+    top:-3px;   
+}
+
+/* file element with custom button */
+.fileElement {
+    position: relative;
+    width:300px;    
+    overflow:hidden;    
+    height:25px;
+}
+
+.fileElement .maskInput {
+    position: absolute;
+    top:0px;
+    left:0px;
+    width:180px;    
+    margin:1px;
+}
+
+.fileElement .customFileButton {
+    position:absolute;
+    left:0px;   
+    top:0px;
+    background:#FFFFFF; 
+    height:25px;
+    width:300px;
+}
+
+.fileElement .customFileButton a,.fileElement .customFileButton a:link  {
+    position: absolute;
+    right:38px;
+    top:1px;
+    text-decoration: none;  
+    font: 11px "Arial", Helvetica, sans-serif !important;
+    font-weight:bolder;
+    text-transform:uppercase;   
+}
+
+.fileElement .customFileButton a.grey span:hover{
+    background: url(/assets/en_US/ccms_img/buttons/btn-back-gry-122211.png) no-repeat top right; color:#dddddd   
+}
+
+.fileElement .customFileButton a.grey{ color:#FFFFFF !important;background: url(/assets/en_US/ccms_img/buttons/btn-back-gry-122211.png) no-repeat top right;} 
+.fileElement .customFileButton a.grey span {padding: 0px 5px 0px 5px; float:left; line-height:22px;cursor: pointer; background: url(/assets/en_US/ccms_img/buttons/btn-back-gry-122211.png) no-repeat top left; }
+
+.fileElement #fileUpload {
+    position:absolute !important;
+    top:0 !important;                   
+    z-index:1000 !important;
+    width:270px !important;
+    height:30px !important;
+    opacity:0 !important;
+    filter: alpha(opacity = 0) !important;
+}
+
+/* Parent Container for the content section
+-------------------------------------------------------------- */
+#outer,.outer {
+    width: 960px;   
+    /* clear:both; */
+    margin-left: auto;
+    margin-right: auto;
+    background: #FFFFFF;    
+    font-weight:normal; 
+    word-spacing:normal; 
+    letter-spacing:normal; 
+    text-transform:none;    
+    height: auto;
+    clear:both;
+}
+/* request form component style*/
+.req_form {
+    float:none;clear:both;overflow:auto;
+}   
+.req_partition{ 
+    width:470px;
+    float:left;
+    height: auto;
+}
+.req_partition .leftfield {
+    background: none repeat scroll 0 0 #CCCCCC;
+    border-right: 1px solid #FFFFFF;
+    border-top: 1px solid #FFFFFF;
+    color: #333333;
+    font-weight: bold;
+    padding: 5px;
+    width:179px;
+    text-align:right;
+    float:left;
+    height: 30px;
+}
+.req_partition .empty {
+    background: none repeat scroll 0 0 #EEEEEE;
+}
+.req_partition .rightfield {
+    background: none repeat scroll 0 0 #EEEEEE;
+    border-right: 1px solid #FFFFFF;
+    border-top: 1px solid #FFFFFF;
+    color: #333333;
+    padding: 5px;
+    text-align:left;
+    width:267px;
+    float:left;
+    height: 30px;
+}
+.req_partition .rowSpan {
+    background: none repeat scroll 0 0 #EEEEEE;
+    border-right: 1px solid #FFFFFF;
+    border-top: 1px solid #FFFFFF;
+    color: #333333;
+    padding: 5px;
+    text-align:left;
+    width:457px;
+    float:left;
+    height: 30px;
+}
+/* error messages */
+.alertError {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: none;
+    color: #cc0000;
+    line-height: 24px;
+    min-height:24px;
+    padding-left:30px;  
+    background-image: url(/assets/en_US/ccms_img/icon-Error.png); 
+    background-position: left top;        
+    position: relative;  background-repeat: no-repeat;
+    clear:both;
+}
+
+.alertCustomCatalogError {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: none;
+    color: #cc0000;
+    line-height: 24px;
+    min-height:24px;
+    padding-left:30px;      
+    position: relative;  background-repeat: no-repeat;
+    clear:both;
+}
+.successUpdated {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-style: italic;
+    font-weight: bold;
+    color: #58a618;
+    line-height: 24px;
+    min-height:24px;
+    padding-left:30px;
+    background-image: url(/assets/en_US/ccms_img/icon-Success.png); 
+    background-position: left top;    
+    position:relative; background-repeat: no-repeat;
+    clear:both;
+
+}
+.noticeAlert {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-style: italic;
+    font-weight: bold;
+    color: #cc0000;
+    text-decoration: none;
+    line-height: 24px;
+    min-height:24px;
+    padding-left:25px;  
+    background-image: url(/content/dam/insight/styleguide/icons/Deep_Chat.png); 
+    background-position: left 5px;
+    position: relative;  background-repeat: no-repeat;
+    clear:both;
+}
+
+.errorField {
+    border-color: #CC0000 !important;
+    border-style: solid;
+    border-width: 1px;
+}
+
+/* common divider */
+.divider {
+    border-color: #DDDDDD;
+    border-right: medium none;
+    border-style: solid none none;
+    border-width: 1px medium medium;
+    height: 1px;
+    margin-bottom: 10px;       
+}
+/* framework icons */
+.frameworkIcons {
+    height: 16px;
+    width: 16px;
+}
+.frameworkIcons:hover {
+    opacity:0.5;
+    filter:alpha(opacity=60);
+    pointer: hand;
+}
+.imageLocation{
+    height: 16px;
+    width: 16px;
+    vertical-align: top;
+    padding-right: 4px;
+}
+#displayHeaderFooter {
+    display:none;
+}
+.subHeader{
+    color: #333333;
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/** wide options select box **/
+
+.selectWideDiv{
+    width:140px; border:solid 1px #d2d2d2; position: relative;overflow:hidden;
+}
+.selectWideDiv .selectWideImg{
+    background: #FFFFFF;
+    padding: 5px 4px;
+    padding-top:7px;
+    position: absolute;
+    right: -1px;
+    top: 1px;
+    margin:0;
+}
+
+.selectWideDiv select {
+    margin:0;
+    min-width:200px;
+}
+
+.selectWide{
+    width:150px;
+} 
+
+div .selectWide{
+    border: 1px solid #D2D2D2;
+}
+
+
+
+
+/** Tool Tip **/
+.commonTooltip {
+    position: absolute;
+    width: 200px;
+    border: 1px solid #B0B0B0;
+    text-align: left;
+    padding: 6px;
+    font-size: 10px;
+    background-color: #F6F6F6;
+    display:none;   
+}
+
+.commonTooltip .tailLeft {
+    position: absolute;
+    top: -10px;
+    left: 186px;
+    width:20px;
+    height:10px;
+    background: url(/assets/en_US/ccms_img/tooltip-left.png) no-repeat left top;
+}
+
+.commonTooltip .tailRight {
+    position: absolute;
+    top: -10px;
+    left: 5px;  
+    width:20px;
+    height:10px;
+    background: url(/assets/en_US/ccms_img/tooltip-right.png) no-repeat left top;
+}
+
+
+
+/* Steps Indicator */
+
+#steps-indicator {
+    position: relative;
+    width: 99%;
+    height: 30px;
+    margin: 0;
+    padding-left:10px;
+    background: url(/assets/en_US/ccms_img/steps-indicator/background-steps-indicator.gif) no-repeat left bottom;
+    border-right: solid 1px #DDDDDD;    
+    }
+
+#steps-indicator ul li {
+    float: left;
+    }
+
+#steps-indicator ul li a {
+    color: #999999;
+    text-decoration:none;
+}
+
+/* Breadcrumbs */
+#steps-indicator ul {
+    list-style: none;
+    margin:0;
+    padding:0;  
+}
+#steps-indicator ul.breadcrumbs li {
+    position: relative;
+    height: 30px;
+    line-height: 32px;
+    margin: 2px 0 0 0;
+    padding: 0 20px 0 13px;
+    background: url(/assets/en_US/ccms_img/steps-indicator/step.gif) no-repeat right top;
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #999;
+    text-shadow: #fff 0px 1px 1px;
+    top: -2px;
+    }
+#steps-indicator ul.breadcrumbs li:hover {
+    cursor: default;
+    }
+#steps-indicator ul.breadcrumbs li span {
+    display: none;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 8px;
+    height: 30px;
+    background: url(/assets/en_US/ccms_img/steps-indicator/step_tail.gif) no-repeat left top;
+    }
+
+#steps-indicator ul.breadcrumbs li.current {
+    margin-left: -7px;
+    padding-left: 21px;
+    background-position: right bottom;
+    color: #fff;
+    text-shadow: #326490 0px 1px 1px;
+    }
+    
+#steps-indicator ul.breadcrumbs li.current a {
+    color:#ffffff;
+}
+    
+#steps-indicator ul.breadcrumbs li.current span {
+    display: block;
+    background-image: url(/assets/en_US/ccms_img/steps-indicator/step_tail.gif);
+    background-position: left bottom;
+    }
+
+/* End Steps Indicator */
+
+/* Force word wrap */
+.word-wrap {    
+    white-space: pre;
+    white-space: -moz-pre-wrap; /* Mozilla */
+    white-space: -hp-pre-wrap; /* HP printers */
+    white-space: -o-pre-wrap; /* Opera 7 */
+    white-space: -pre-wrap; /* Opera 4-6 */
+    white-space: pre-wrap; /* CSS 2.1 */
+    white-space: pre-line; /* CSS 3 (and 2.1 as well, actually) */
+    word-wrap: break-word; /* IE */
+    _white-space: pre; /* IE hack to re-specify in addition to word-wrap */
+    width:194px;
+    overflow:hidden;
+}
+
+/*custom input display ------
+-------------------------------------------------------------- */
+.customInputDisplay
+{   
+    height:25px;
+    border: solid 1px #d5d5d5;
+    overflow:hidden;
+    line-height: 25px;
+    padding-left:5px;   
+    cursor: pointer;
+    position:relative;
+    width:200px;
+    background: #ffffff;           
+}
+.customInputDisplay .customSelectIcon
+{
+    position:absolute;
+    right:0px;
+    top:0px;    
+    padding-left:10px;
+    padding-right:10px;
+    height:25px;
+    margin:0;
+    background: url(/content/dam/insight/styleguide/down-arrow-unselected.png) no-repeat center center #FFFFFF;
+}
+
+.customInputDisplay .customSelectIconHover
+{
+    background: url(/content/dam/insight/styleguide/down-arrow-selected.png) no-repeat center center #FFFFFF;
+}
+/*custom input display end ------
+-------------------------------------------------------------- */
+
+/*custom select component ------
+-------------------------------------------------------------- */
+
+.customSelect .customOptions
+{
+    display:none;
+    position:absolute;
+    border: solid 1px #d5d5d5;
+    border-bottom: none;
+    background: #ffffff;
+    cursor: pointer;
+    z-index:2000;   
+    max-height:500px;
+    overflow-y:hidden;
+    overflow-x: hidden;
+}
+
+.customSelect .customOptions .optionItem
+{
+    min-height: 25px;
+    border-bottom: solid 1px #d5d5d5;
+    line-height: 25px;
+    padding-left: 10px;
+    padding-right: 10px;    
+    width:auto;
+}
+.customSelect .customOptions .optionItem:hover
+{
+    background: #FFF8DC;
+}
+
+/*custom select component end ------
+-------------------------------------------------------------- */
+
+/*framework icons begin------
+-------------------------------------------------------------- */
+
+.Deep_Accept_Icon
+{
+    background: url("/content/dam/insight/styleguide/icons/Deep_Accept.png") repeat scroll 0 0 transparent;
+    display: block;
+    float: left;
+    margin: 1px;
+}
+.Deep_Add_Icon
+{
+    background: url("/content/dam/insight/styleguide/icons/Deep_Add.png") repeat scroll 0 0 transparent;
+    display: block;
+    float: left;
+    margin: 1px;
+}
+.Deep_Add_fav_Icon
+{
+    background: url("/content/dam/insight/styleguide/icons/Deep_Add_fav.png") repeat scroll 0 0 transparent;
+    display: block;
+    float: left;
+    margin: 1px;
+}
+.Deep_Add_user_Icon
+{
+    background: url("/content/dam/insight/styleguide/icons/Deep_Add_user.png") repeat scroll 0 0 transparent;
+    display: block;
+    float: left;
+    margin: 1px;
+}
+.Deep_Alert_Icon
+{
+    background: url("/content/dam/insight/styleguide/icons/Deep_Alert.png") repeat scroll 0 0 transparent;
+    display: block;
+    float: left;
+    margin: 1px;
+}
+.Deep_Billboard_Icon
+{
+    background: url("/content/dam/insight/styleguide/icons/Deep_Billboard.png") repeat scroll 0 0 transparent;
+    display: block;
+    float: left;
+    margin: 1px;
+}
+.Deep_Billboard_Icon
+{
+    background: url("/content/dam/insight/styleguide/icons/Deep_Billboard.png") repeat scroll 0 0 transparent;
+    display: block;
+    float: left;
+    margin: 1px;
+}
+.Deep_Cancel_Icon
+{
+    background: url("/content/dam/insight/styleguide/icons/Deep_Cancel.png") repeat scroll 0 0 transparent;
+    display: block;
+    float: left;
+    margin: 1px;
+}
+.Deep_Chat_Icon
+{
+    background: url("/content/dam/insight/styleguide/icons/Deep_Chat.png") repeat scroll 0 0 transparent;
+    display: block;
+    float: left;
+    margin: 1px;
+}
+.Deep_Close_Icon
+{
+    background: url("/content/dam/insight/styleguide/icons/Deep_Close.png") repeat scroll 0 0 transparent;
+    display: block;
+    float: left;
+    margin: 1px;
+}
+.Deep_Communicate_Icon
+{
+    background: url("/content/dam/insight/styleguide/icons/Deep_Communicate.png") repeat scroll 0 0 transparent;
+    display: block;
+    float: left;
+    margin: 1px;
+}
+.Deep_Copy_Icon
+{
+    background: url("/content/dam/insight/styleguide/icons/Deep_Copy.png") repeat scroll 0 0 transparent;
+    display: block;
+    float: left;
+    margin: 1px;
+}
+.Deep_Cut_Icon
+{
+    background: url("/content/dam/insight/styleguide/icons/Deep_Cut.png") repeat scroll 0 0 transparent;
+    display: block;
+    float: left;
+    margin: 1px;
+}
+.Deep_Delete_Icon
+{
+    background: url("/content/dam/insight/styleguide/icons/Deep_Delete.png") repeat scroll 0 0 transparent;
+    display: block;
+    float: left;
+    margin: 1px;
+}
+.Deep_Delete_Icon
+{
+    background: url("/content/dam/insight/styleguide/icons/Deep_Delete.png") repeat scroll 0 0 transparent;
+    display: block;
+    float: left;
+    margin: 1px;
+}
+.Deep_Delete_user_Icon
+{
+    background: url("/content/dam/insight/styleguide/icons/Deep_Delete_user.png") repeat scroll 0 0 transparent;
+    display: block;
+    float: left;
+    margin: 1px;
+}
+.Deep_Edit_Icon
+{
+    background: url("/content/dam/insight/styleguide/icons/Deep_Edit.png") repeat scroll 0 0 transparent;
+    display: block;
+    float: left;
+    margin: 1px;
+}
+.Deep_Faq_Icon
+{
+    background: url("/content/dam/insight/styleguide/icons/Deep_Faq.png") repeat scroll 0 0 transparent;
+    display: block;
+    float: left;
+    margin: 1px;
+}
+.Deep_Fav_Icon
+{
+    background: url("/content/dam/insight/styleguide/icons/Deep_Fav.png") repeat scroll 0 0 transparent;
+    display: block;
+    float: left;
+    margin: 1px;
+}
+.Deep_File_Icon
+{
+    background: url("/content/dam/insight/styleguide/icons/Deep_File.png") repeat scroll 0 0 transparent;
+    display: block;
+    float: left;
+    margin: 1px;
+}
+.Deep_File_add_Icon
+{
+    background: url("/content/dam/insight/styleguide/icons/Deep_File_add.png") repeat scroll 0 0 transparent;
+    display: block;
+    float: left;
+    margin: 1px;
+}
+.Deep_File_delete_Icon
+{
+    background: url("/content/dam/insight/styleguide/icons/Deep_File_delete.png") repeat scroll 0 0 transparent;
+    display: block;
+    float: left;
+    margin: 1px;
+}
+.Deep_File_edit_Icon
+{
+    background: url("/content/dam/insight/styleguide/icons/Deep_File_edit.png") repeat scroll 0 0 transparent;
+    display: block;
+    float: left;
+    margin: 1px;
+}
+.Deep_File_info_Icon
+{
+    background: url("/content/dam/insight/styleguide/icons/Deep_File_info.png") repeat scroll 0 0 transparent;
+    display: block;
+    float: left;
+    margin: 1px;
+}
+.Deep_Flag_Icon
+{
+    background: url("/content/dam/insight/styleguide/icons/Deep_Flag.png") repeat scroll 0 0 transparent;
+    display: block;
+    float: left;
+    margin: 1px;
+}
+.Deep_Folder_Icon
+{
+    background: url("/content/dam/insight/styleguide/icons/Deep_Folder.png") repeat scroll 0 0 transparent;
+    display: block;
+    float: left;
+    margin: 1px;
+}
+.Deep_Folder_add_Icon
+{
+    background: url("/content/dam/insight/styleguide/icons/Deep_Folder_add.png") repeat scroll 0 0 transparent;
+    display: block;
+    float: left;
+    margin: 1px;
+}
+.Deep_Folder_alert_Icon
+{
+    background: url("/content/dam/insight/styleguide/icons/Deep_Folder_alert.png") repeat scroll 0 0 transparent;
+    display: block;
+    float: left;
+    margin: 1px;
+}
+.Deep_Folder_delete_Icon
+{
+    background: url("/content/dam/insight/styleguide/icons/Deep_Folder_delete.png") repeat scroll 0 0 transparent;
+    display: block;
+    float: left;
+    margin: 1px;
+}
+.Deep_Folder_fav_Icon
+{
+    background: url("/content/dam/insight/styleguide/icons/Deep_Folder_fav.png") repeat scroll 0 0 transparent;
+    display: block;
+    float: left;
+    margin: 1px;
+}
+.Deep_Folder_info_Icon
+{
+    background: url("/content/dam/insight/styleguide/icons/Deep_Folder_info.png") repeat scroll 0 0 transparent;
+    display: block;
+    float: left;
+    margin: 1px;
+}
+.Deep_Home_Icon
+{
+    background: url("/content/dam/insight/styleguide/icons/Deep_Home.png") repeat scroll 0 0 transparent;
+    display: block;
+    float: left;
+    margin: 1px;
+}
+.Deep_Info_Icon
+{
+    background: url("/content/dam/insight/styleguide/icons/Deep_Info.png") repeat scroll 0 0 transparent;
+    display: block;
+    float: left;
+    margin: 1px;
+}
+.Deep_Key_Icon
+{
+    background: url("/content/dam/insight/styleguide/icons/Deep_Key.png") repeat scroll 0 0 transparent;
+    display: block;
+    float: left;
+    margin: 1px;
+}
+.Deep_Lock_Icon
+{
+    background: url("/content/dam/insight/styleguide/icons/Deep_Lock.png") repeat scroll 0 0 transparent;
+    display: block;
+    float: left;
+    margin: 1px;
+}
+.Deep_Login_in_Icon
+{
+    background: url("/content/dam/insight/styleguide/icons/Deep_Login_in.png") repeat scroll 0 0 transparent;
+    display: block;
+    float: left;
+    margin: 1px;
+}
+.Deep_Login_out_Icon
+{
+    background: url("/content/dam/insight/styleguide/icons/Deep_Login_out.png") repeat scroll 0 0 transparent;
+    display: block;
+    float: left;
+    margin: 1px;
+}
+.Deep_Paperclip_Icon
+{
+    background: url("/content/dam/insight/styleguide/icons/Deep_Paperclip.png") repeat scroll 0 0 transparent;
+    display: block;
+    float: left;
+    margin: 1px;
+}
+.Deep_Paste_Icon
+{
+    background: url("/content/dam/insight/styleguide/icons/Deep_Paste.png") repeat scroll 0 0 transparent;
+    display: block;
+    float: left;
+    margin: 1px;
+}
+.Deep_Percent_Icon
+{
+    background: url("/content/dam/insight/styleguide/icons/Deep_Percent.png") repeat scroll 0 0 transparent;
+    display: block;
+    float: left;
+    margin: 1px;
+}
+.Deep_Pools_Icon
+{
+    background: url("/content/dam/insight/styleguide/icons/Deep_Pools.png") repeat scroll 0 0 transparent;
+    display: block;
+    float: left;
+    margin: 1px;
+}
+.Deep_Prohibit_Icon
+{
+    background: url("/content/dam/insight/styleguide/icons/Deep_Prohibit.png") repeat scroll 0 0 transparent;
+    display: block;
+    float: left;
+    margin: 1px;
+}
+.Deep_Refresh_Icon
+{
+    background: url("/content/dam/insight/styleguide/icons/Deep_Refresh.png") repeat scroll 0 0 transparent;
+    display: block;
+    float: left;
+    margin: 1px;
+}
+.Deep_Remove_fav_Icon
+{
+    background: url("/content/dam/insight/styleguide/icons/Deep_Remove_fav.png") repeat scroll 0 0 transparent;
+    display: block;
+    float: left;
+    margin: 1px;
+}
+.Deep_Ruler_Icon
+{
+    background: url("/content/dam/insight/styleguide/icons/Deep_Ruler.png") repeat scroll 0 0 transparent;
+    display: block;
+    float: left;
+    margin: 1px;
+}
+.Deep_Save_Icon
+{
+    background: url("/content/dam/insight/styleguide/icons/Deep_Save.png") repeat scroll 0 0 transparent;
+    display: block;
+    float: left;
+    margin: 1px;
+}
+.Deep_Search_Icon
+{
+    background: url("/content/dam/insight/styleguide/icons/Deep_Search.png") repeat scroll 0 0 transparent;
+    display: block;
+    float: left;
+    margin: 1px;
+}
+.Deep_Shoppingbag_Icon
+{
+    background: url("/content/dam/insight/styleguide/icons/Deep_Shoppingbag.png") repeat scroll 0 0 transparent;
+    display: block;
+    float: left;
+    margin: 1px;
+}
+.Deep_Shoppingcart_Icon
+{
+    background: url("/content/dam/insight/styleguide/icons/Deep_Shoppingcart.png") repeat scroll 0 0 transparent;
+    display: block;
+    float: left;
+    margin: 1px;
+}
+.Deep_Star_empty_Icon
+{
+    background: url("/content/dam/insight/styleguide/icons/Deep_Star_empty.png") repeat scroll 0 0 transparent;
+    display: block;
+    float: left;
+    margin: 1px;
+}
+.Deep_Star_full_Icon
+{
+    background: url("/content/dam/insight/styleguide/icons/Deep_Star_full.png") repeat scroll 0 0 transparent;
+    display: block;
+    float: left;
+    margin: 1px;
+}
+.Deep_Star_half_full_Icon
+{
+    background: url("/content/dam/insight/styleguide/icons/Deep_Star_half_full.png") repeat scroll 0 0 transparent;
+    display: block;
+    float: left;
+    margin: 1px;
+}
+.Deep_Telephone_Icon
+{
+    background: url("/content/dam/insight/styleguide/icons/Deep_Telephone.png") repeat scroll 0 0 transparent;
+    display: block;
+    float: left;
+    margin: 1px;
+}
+.Deep_Tools_Icon
+{
+    background: url("/content/dam/insight/styleguide/icons/Deep_Tools.png") repeat scroll 0 0 transparent;
+    display: block;
+    float: left;
+    margin: 1px;
+}
+.Deep_Unlock_Icon
+{
+    background: url("/content/dam/insight/styleguide/icons/Deep_Unlock.png") repeat scroll 0 0 transparent;
+    display: block;
+    float: left;
+    margin: 1px;
+}
+.Deep_User_Icon
+{
+    background: url("/content/dam/insight/styleguide/icons/Deep_User.png") repeat scroll 0 0 transparent;
+    display: block;
+    float: left;
+    margin: 1px;
+}
+.Deep_Users_Icon
+{
+    background: url("/content/dam/insight/styleguide/icons/Deep_Users.png") repeat scroll 0 0 transparent;
+    display: block;
+    float: left;
+    margin: 1px;
+}
+.Deep_Wheel_Icon
+{
+    background: url("/content/dam/insight/styleguide/icons/Deep_Wheel.png") repeat scroll 0 0 transparent;
+    display: block;
+    float: left;
+    margin: 1px;
+}
+.Deep_Wheels_Icon
+{
+    background: url("/content/dam/insight/styleguide/icons/Deep_Wheels.png") repeat scroll 0 0 transparent;
+    display: block;
+    float: left;
+    margin: 1px;
+}
+.Deep_Wrench_Icon
+{
+    background: url("/content/dam/insight/styleguide/icons/Deep_Wrench.png") repeat scroll 0 0 transparent;
+    display: block;
+    float: left;
+    margin: 1px;
+}
+.Deep_Zoom_in_Icon
+{
+    background: url("/content/dam/insight/styleguide/icons/Deep_Zoom_in.png") repeat scroll 0 0 transparent;
+    display: block;
+    float: left;
+    margin: 1px;
+}
+.Deep_Zoom_out_Icon
+{
+    background: url("/content/dam/insight/styleguide/icons/Deep_Zoom_out.png") repeat scroll 0 0 transparent;
+    display: block;
+    float: left;
+    margin: 1px;
+}   
+.Deep_Calendar_Icon
+{
+    background: url("/content/dam/insight/styleguide/icons/Deep_Calendar.png") repeat scroll 0 0 transparent;
+    display: block;
+    float: left;
+    margin: 1px;
+}
+.Deep_Sort_Order_Icon
+{
+    background: url("/content/dam/insight/styleguide/icons/Deep_Sort_Order.png") repeat scroll 0 0 transparent;
+    display: block;
+    float: left;
+    margin: 1px;
+}   
+.Deep_Wizard_Icon
+{
+    background: url("/content/dam/insight/styleguide/icons/Deep_Wizard.png") repeat scroll 0 0 transparent;
+    display: block;
+    float: left;
+    margin: 1px;
+}
+.Utilities_Icon
+{
+    background: url("/content/dam/insight/styleguide/icons/Utilities-new.png") repeat scroll 0 0 transparent;
+    display: block;
+    float: left;
+    margin: 1px;
+}
+.Deep_Compare_Icon
+{
+    background: url("/content/dam/insight/styleguide/icons/Deep_Compare.png") repeat scroll 0 0 transparent;
+    display: block;
+    float: left;
+    margin: 1px;
+}
+.Deep_Product_Research_Icon
+{
+    background: url("/content/dam/insight/styleguide/icons/Deep_Product_Research.png") repeat scroll 0 0 transparent;
+    display: block;
+    float: left;
+    margin: 1px;
+}
+.Deep_quick_view_Icon
+{
+    background: url("/content/dam/insight/styleguide/icons/Deep_quick_view.png") repeat scroll 0 0 transparent;
+    display: block;
+    float: left;
+    margin: 1px;
+}
+.Print_Icon
+{
+    background: url("/content/dam/insight/styleguide/icons/print-new.png") repeat scroll 0 0 transparent;
+    display: block;
+    float: left;
+    margin: 1px;
+}
+.Email_Icon
+{
+    background: url("/content/dam/insight/styleguide/icons/email-new.png") repeat scroll 0 0 transparent;
+    display: block;
+    float: left;
+    margin: 1px;
+}
+.Download_Icon
+{
+    background: url("/content/dam/insight/styleguide/icons/download-new.png") repeat scroll 0 0 transparent;
+    display: block;
+    float: left;
+    margin: 1px;
+}
+.Calculator_Icon
+{
+    background: url("/content/dam/insight/styleguide/icons/calculator-new.jpg") repeat scroll 0 0 transparent;
+    display: block;
+    float: left;
+    margin: 1px;
+}
+.DownloadPDF_Icon
+{
+    background: url("/content/dam/insight/styleguide/icons/downloadPDF-new.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    margin: 1px;
+    padding-left: 20px;
+}
+.DownloadExcel_Icon
+{
+    background: url("/content/dam/insight/styleguide/icons/downloadExcel-new.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    margin: 1px;
+    padding-left: 20px;
+}
+.ForwardNext_Icon
+{
+    background: url("/content/dam/insight/styleguide/icons/forwardNext-new.png") repeat scroll 0 0 transparent;
+    display: block;
+    float: left;
+    margin: 1px;
+}
+.BackReturn_Icon
+{
+    background: url("/content/dam/insight/styleguide/icons/backReturn-new.png") repeat scroll 0 0 transparent;
+    display: block;
+    float: left;
+    margin: 1px;
+}   
+.Toggle_inactive_Icon
+{
+    background: url("/content/dam/insight/styleguide/icons/icon_toggle_inactive.gif") repeat scroll 0 0 transparent;
+    display: block;
+    float: left;
+    margin: 1px;
+}               
+.Toggle_active_Icon
+{
+    background: url("/content/dam/insight/styleguide/icons/icon_toggle_active.gif") repeat scroll 0 0 transparent;
+    display: block;
+    float: left;
+    margin: 1px;
+}   
+.Toggle_inactive_Icon
+{
+    background: url("/content/dam/insight/styleguide/icons/icon_toggle_inactive.gif") repeat scroll 0 0 transparent;
+    display: block;
+    float: left;
+    margin: 1px;
+}
+
+/*framework icons end ------
+-------------------------------------------------------------- */
+
+/*pagination component ------
+-------------------------------------------------------------- */
+.insightPagination {
+    height: 30px;
+    background: #e5e5e5;
+    line-height: 30px;
+    font-weight:bold;
+    padding: 0px 5px 0px 5px;
+    border: solid 1px #d5d5d5;
+}
+.insightPagination a {
+    color: #444444;
+}
+.insightPagination a:hover {
+    color: #0073B0;
+    text-decoration: none;
+}
+.insightPagination a.next {
+    margin-left: 10px;
+}
+.insightPagination a.previous {
+    margin-right: 10px;
+}
+/*pagination component end ------
+-------------------------------------------------------------- */
