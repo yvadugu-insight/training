@@ -33,7 +33,7 @@ body {
     min-width: 960px;
     text-align: left;
     font-size: 75%; color: #666666; font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
-    background: url("/assets/en_US/ccms_img/insight-home-backtile-2011.gif") repeat-x scroll 0 0 #f9f9f9;
+    background: url("../../images/textures_back.jpg") repeat-x scroll 0 0 #f9f9f9;
     height: auto;
 }
 /* Padding for Body

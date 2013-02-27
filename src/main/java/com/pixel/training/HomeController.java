@@ -32,6 +32,8 @@ public class HomeController {
 		String formattedDate = dateFormat.format(date);
 		
 		model.addAttribute("serverTime", formattedDate);
+		//imageUrlService.getImageServerUrl(request)
+		model.addAttribute("fileServer","http://localhost:8080/training");
 		
 		return "home";
 	}
