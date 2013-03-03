@@ -1,0 +1,4 @@
+{"labels":{
+             "welcomeLabel":"Welcome To Pixel Info Systems."            
+          }
+}

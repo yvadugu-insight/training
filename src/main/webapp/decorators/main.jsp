@@ -9,11 +9,14 @@
     <link rel="stylesheet" type="text/css" href="${fileServer}/resources/assets/www/css/common.css" />
     <link rel="stylesheet" type="text/css" href="${fileServer}/resources/assets/www/css/jquery-ui.css" />
     <script type="text/javascript" src="${fileServer}/resources/assets/www/javascript/jquery-1.9.0.js"></script>
+    <script type="text/javascript" src="${fileServer}/resources/assets/www/javascript/commonFunctions.js"></script>    
 	<script type="text/javascript" src="${fileServer}/resources/assets/www/javascript/jquery.tmpl.js"></script>
-	<script type="text/javascript" src="${fileServer}/resources/assets/www/javascript/json2.js"></script>                       
+	<script type="text/javascript" src="${fileServer}/resources/assets/www/javascript/json2.js"></script>
+	<link rel="icon" type="image/png" href="${fileServer}/resources/assets/images/fevicon.png">                       
     <decorator:head />      
 </head>
 <body>
+    <input type="hidden" id="globalFileServerUrlId" value="${fileServer}"/>
 	<div class="mainBodyParent">	
 	<jsp:include page="../WEB-INF/framework/header.jsp"></jsp:include>    	
     <decorator:body />

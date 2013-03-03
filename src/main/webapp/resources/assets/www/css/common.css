@@ -542,7 +542,7 @@ div .selectWide{
     white-space: pre-line; /* CSS 3 (and 2.1 as well, actually) */
     word-wrap: break-word; /* IE */
     _white-space: pre; /* IE hack to re-specify in addition to word-wrap */
-    width:194px;
+    width:150px;
     overflow:hidden;
 }
 

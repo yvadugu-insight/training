@@ -1,0 +1,62 @@
+@CHARSET "ISO-8859-1";
+/*
+   header and footer css
+*/
+.headerContentMainDiv{
+	padding: 0px 0px 10px 10px;
+	height:auto;	
+	width:950px;
+	background-color: #FFF;	
+}
+.logoDiv{
+	padding :10px;
+}
+.mainMenuDiv{
+	/* #5858FA	 */
+	width:960px;
+	height:30px;
+	border: 1px dotted #DDD;	
+	/* background-color: #5858FA;	 */
+	background: white url("../../images/menuImg.png") repeat-x scroll 0 0;
+}
+.eachMenu
+{
+	float:left;
+	width:230px;
+	height:30px;
+	font-weight: bold;
+	text-align: center;			
+}
+
+.menuLabel a{ color: #FFFFFF; text-decoration: none; font-weight:bold;}
+.menuLabel a:focus,a:hover{ color: #E8E8E8; text-decoration: underline; font-weight:normal;}
+.eachMenu:hover{
+ background-color:#600000;
+}
+.footerSectionsDiv{
+	padding: 0px 0px 10px 10px;
+	max-width:550px;
+	/* border : 1px dotted #CCCCCC; */
+	margin:0 auto;
+	position:relative;	
+}
+.menuLabel{
+	color:#FFF;	
+	padding-top: 5px;
+}
+.footerSection{
+	float:left;
+	width:100px;
+	margin:5px;
+	text-align: center;
+}
+.footerSection ul li{
+	list-style: none;	
+	padding-left:15px;
+	text-align: justify;
+}
+.footerSection h4{	
+	text-align: center;
+	border-bottom: 1px solid #DDDDDD;
+	font-weight: bolder;
+}
