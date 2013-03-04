@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="${fileServer}/resources/assets/www/css/common.css" />
     <link rel="stylesheet" type="text/css" href="${fileServer}/resources/assets/www/css/jquery-ui.css" />
     <script type="text/javascript" src="${fileServer}/resources/assets/www/javascript/jquery-1.9.0.js"></script>
+    <script type="text/javascript" src="${fileServer}/resources/assets/www/javascript/jquery-ui.js"></script>
     <script type="text/javascript" src="${fileServer}/resources/assets/www/javascript/commonFunctions.js"></script>    
 	<script type="text/javascript" src="${fileServer}/resources/assets/www/javascript/jquery.tmpl.js"></script>
 	<script type="text/javascript" src="${fileServer}/resources/assets/www/javascript/json2.js"></script>

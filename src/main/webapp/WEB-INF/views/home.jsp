@@ -5,17 +5,17 @@
 <title>Training Add Home</title> 
 <script type="text/javascript" src="${fileServer}/resources/assets/www/javascript/homePage.js"></script>
 <link rel="stylesheet" type="text/css" href="${fileServer}/resources/assets/www/css/homePage.css" />
+<link rel="stylesheet" type="text/css" href="${fileServer}/resources/assets/www/css/demoVideo.css" />
 </head>
 <body>
 	<!-- outer div = contains everything -->
-	<div id="outer">
-		<!-- sprite div = contains the change locale, shopping cart, order tracking and login -->
+	<div id="outer">		
 		<!-- bodyContent div = generic wrapper for all the content that uses this JSP -->
 		<div id="bodyContent" class="Layout">
-		   <!-- Quote History page loads here -->
-		   <div id="trainingAddMainDiv">
-		   		<%-- <p>Server time is :-${serverTime}-"yaswanth working.... here is starting page."</p> --%>
+		   <!-- home page loads here -->
+		   <div id="trainingAddMainDiv">		   		
 		   		<div id="TrainingContentDiv"></div>
+		   		<div id="TrainingVideoDiv" style="display:none;"></div>
 		   </div>		    
 		</div>
 		<!-- end bodyContent wrapper -->

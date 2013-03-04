@@ -1,0 +1,48 @@
+@CHARSET "ISO-8859-1";
+
+#launchContentDiv{	
+    width: 100%;
+    height: 100%;
+    border: 1px solid #DDD;
+}
+#launchAreaDiv{
+	background-color: #D4D4D4;
+	padding:2px;
+	width: 100%;
+    height: 100%;
+    
+}
+.launchLogoHere{
+	width:65%;
+	height:100%;
+	background: url("../../images/logoTop.jpg");
+	border-right: 10px solid #FFF;
+    border-bottom: 10px solid #FFF;
+}
+.launchFlowHere{
+	width:34%;
+	height:100%;	
+    border-bottom: 10px solid #FFF;
+}
+.launchTopDiv{
+	width: 100%;
+    height: 50%;    
+}
+.launchActivityHere{
+	background: url("../../images/lodoDesc.jpg");
+	height:50%;	
+}
+.launchActivityLeft{
+	width:70%;
+	height:98%;	
+}
+.launchActivityRight{
+	padding-top:100px;
+	font-weight: bold;
+		
+}
+.sloganDiv{
+	padding-left:350px;
+	padding-top:115px;
+	vertical-align: middle;
+}
