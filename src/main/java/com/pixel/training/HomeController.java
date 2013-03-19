@@ -12,11 +12,14 @@ import org.json.JSONException;
 import org.json.JSONObject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.RequestBody;
+
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+
+import com.pixel.util.UrlResolverUtil;
 
 /**
  * Handles requests for the application home page.
@@ -24,13 +27,16 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @Controller
 public class HomeController {
 	
+	@Autowired
+	UrlResolverUtil urlResolverUtil;
+	
 	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
 	
 	/**
 	 * Simply selects the home view to render by returning its name.
 	 */
 	@RequestMapping(value = "/home", method = RequestMethod.GET)
-	public String home(Locale locale, Model model) {
+	public String home(Locale locale, Model model, HttpServletRequest req) {
 		logger.info("Welcome home! The client locale is {}.", locale);
 		
 		Date date = new Date();
@@ -40,8 +46,10 @@ public class HomeController {
 		
 		model.addAttribute("serverTime", formattedDate);
 		//imageUrlService.getImageServerUrl(request)
-		model.addAttribute("fileServer","http://localhost:8080/training");
-		
+		model.addAttribute("fileServer",urlResolverUtil.getImageServerUrl(req));
+		/*String fileUrl = urlResolverUtil.getImageServerUrl(req);
+		System.out.println("imager server url = "+fileUrl);*/
+				
 		return "home";
 	}
 	
@@ -53,14 +61,14 @@ public class HomeController {
 		{			
 			model.addAttribute("videoKey", key );			
 		}		
-		model.addAttribute("fileServer","http://localhost:8080/training");		
+		model.addAttribute("fileServer",urlResolverUtil.getImageServerUrl(req));		
 		return "demoVedio";
 	}
 	
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String launch(Locale locale, Model model, HttpServletRequest req) {
 						
-		model.addAttribute("fileServer","http://localhost:8080/training");		
+		model.addAttribute("fileServer",urlResolverUtil.getImageServerUrl(req));		
 		return "launch";
 	}
 	
@@ -77,7 +85,7 @@ public class HomeController {
 		}
 		
 		model.addAttribute("fileServer","http://localhost:8080/training");	
-		response.sendRedirect("/insightweb/demo");
+		response.sendRedirect();
 		
 	}*/
 

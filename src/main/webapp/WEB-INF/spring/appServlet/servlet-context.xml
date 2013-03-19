@@ -23,6 +23,8 @@
 	
 	<context:component-scan base-package="com.pixel.training" />
 	
+	<context:component-scan base-package="com.pixel.util"/>
+	
 	
 	
 </beans:beans>

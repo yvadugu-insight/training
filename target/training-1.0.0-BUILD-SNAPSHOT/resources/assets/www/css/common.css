@@ -1,0 +1,346 @@
+@charset "utf-8";
+
+/* reset.css */
+html {margin:0;padding:0;border:0;}
+body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, dialog, figure, footer, header, hgroup, nav, section {margin:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
+article, aside, details, figcaption, figure, dialog, footer, header, hgroup, menu, nav, section {display:block;}
+body {line-height:1.5;background:#FFFFFF;}
+table {border-collapse:separate;}
+caption, th, td {text-align:left;font-weight:normal;float:none !important;}
+table, th, td {vertical-align:middle;}
+blockquote:before, blockquote:after, q:before, q:after {content:'';}
+blockquote, q {quotes:"" "";}
+a img {border:none;}
+:focus {outline:0;}
+
+/*float elements ------
+-------------------------------------------------------------- */
+.right      { float: right !important; }
+.left       { float: left !important; }
+.float-none {float:none !important;}
+.clear, .extender {
+  clear: both;
+  display: block;     
+}
+
+/*Typography and Headings ------
+-------------------------------------------------------------- */
+/* Default font settings.
+   The font-size percentage is of 16px. (0.75 * 16px = 12px) */
+html { font-size:100.01%; }
+body {
+    margin:0 auto;
+    min-width: 960px;
+    text-align: left;
+    font-size: 75%; color: #666666; font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;    
+    background: repeat-x scroll 0 0 #BDBDBD;
+    
+    height: auto;
+}
+/* Padding for Body
+----------------------------------------------------------------------------------------------------*/
+.content
+{
+    padding:10px;   
+}
+/* Headings
+-------------------------------------------------------------- */
+h1,h2,h3,h4,h5,h6 {
+    font-weight: normal;
+    color: #333;
+}
+h1 { font-size: 1.8em; line-height: 1;border-bottom:1px solid #DDDDDD;padding-bottom:5px;}
+h2 { font-size: 1.5em;line-height: 1.3; color:#444444; border-bottom:1px dotted #333333;margin-bottom:5px; }
+h3 { font-size: 1.2em; line-height: 1; color:#444444;  }
+h4 { font-size: 1em; line-height: 1.25; color:#444444;  }
+h5 { font-size: 1em; font-weight: bold; }
+h6 { font-size: .90em; font-weight: bold; }
+
+h1 img, h2 img, h3 img, h4 img, h5 img, h6 img {
+  margin: 0;
+}
+/* Text elements with images
+-------------------------------------------------------------- */
+/*
+  These can be used to pull an image at the start of a paragraph, so
+  that the text flows around it (usage: <p><img class="left">Text</p>)*/
+p           { margin: 0 0 1.5em; } 
+p .left     { margin: 1.5em 1.5em 1.5em 0; padding: 0; }
+p .right    { margin: 1.5em 0 1.5em 1.5em; padding: 0; }
+/*Link or Anchor Styling*/      
+a img{
+    border:0;   
+}   
+a:focus,
+a:hover     { color: #61b3d5; text-decoration: underline; }
+a { color: #0073B0; text-decoration: none; font-weight:normal;}
+blockquote  { margin: 1.5em; font-style: italic; }
+strong,dfn  { font-weight: bold; }
+em,dfn      { font-style: italic; }
+sup, sub    { line-height: 0; }
+
+abbr, acronym {
+    border-bottom: 1px dotted #666;
+    color: #666;
+}
+address     { margin: 0 0 1.5em; font-style: italic; }
+del         { color:#666666; }
+pre         { margin: 1.5em 0; white-space: pre; }
+pre,code,tt { font: 1em 'andale mono', 'lucida console', monospace; line-height: 1.5; }
+
+form        {text-align:left;}
+/* Lists
+-------------------------------------------------------------- */
+ul, ol {
+    padding:0;
+    margin:0;   
+    text-align:left;
+}
+ul li, ol li {
+    margin-left:15px;
+}
+ul     { list-style-type: disc; }
+ol     { list-style-type: decimal; }
+dl     { margin: 0 0 1.5em 0; }
+dl dt  { font-weight: bold; }
+dd     { margin-left: 1.5em;}       
+/* Tables
+-------------------------------------------------------------- */
+/*
+  Because of the need for padding on TH and TD, the vertical rhythm
+  on table cells has to be 27px, instead of the standard 18px or 36px
+  of other elements.
+ */
+table.tableMain { margin-bottom: 1.4em; width:100%; border: solid 1px #888888; table-layout:fixed;border-collapse: collapse;}
+table.tableMain th { color:#333333;font-size: 1em; font-weight: bold; border-bottom: solid 1px #888888; background: #cccccc; background-color:#ccc; margin: 0;padding: 4px 10px 4px 5px; }
+table.tableMain thead th { color:#333333;background: #ccc; background-color:#ccc;}
+table.tableMain > tbody > tr > td { border-bottom: solid 1px #888888;}
+table.tableMain td, table.tableMain tr, table.tableMain caption { padding: 4px 10px 4px 5px;}
+
+
+.tableMain .sub-table {border-collapse:collapse;}
+.tableMain .sub-table th, .tableMain .sub-table td {border: 1px solid #333333;}
+
+/*
+  Zebra-stripe your tables--Add the class "even" to every other table row. 
+ */
+.even   {
+    background: #eeeeee;
+    background-color: #eeeeee;
+}
+table.tableMain > tbody > tr:hover, table.tableMain > tbody > tr.even:hover  {
+    background: #FFF8DC ;   
+}           
+table.tableMain tfoot       { background-color:#ddd; font-weight:bolder; font-size:inherit; margin-bottom:inherit;padding: 4px 10px 4px 5px;}
+caption     { background: #444444;  background-color: #444444; color:#ffffff; font-weight:bold; border:inherit;}
+caption  strong  { text-transform:uppercase; }
+table.tableMain  tr h2      
+            { color: #333333;background-color:#ddd; border-bottom: solid 1px #888888; font-weight:bold; font-size:1em; margin: -4px -10px -5px -5px;padding: 4px 10px 4px 5px; line-height:inherit; }
+table.tableMain  tr h3      
+            { color: #333333; background-color:#ccc; border-bottom: solid 1px #888888; font-weight:bold; font-size:1em; margin: -4px -10px -5px -5px; padding: 4px 10px 4px 5px; line-height:inherit; }
+
+
+/* Parent Container for the content section
+-------------------------------------------------------------- */
+#outer,.outer {
+    width: 960px;   
+    /* clear:both; */
+    margin-left: auto;
+    margin-right: auto;
+    background: #FFFFFF;    
+    font-weight:normal; 
+    word-spacing:normal; 
+    letter-spacing:normal; 
+    text-transform:none;    
+    height: auto;
+    clear:both;
+}
+/* request form component style*/
+.req_form {
+    float:none;clear:both;overflow:auto;
+}   
+.req_partition{ 
+    width:470px;
+    float:left;
+    height: auto;
+}
+.req_partition .leftfield {
+    background: none repeat scroll 0 0 #CCCCCC;
+    border-right: 1px solid #FFFFFF;
+    border-top: 1px solid #FFFFFF;
+    color: #333333;
+    font-weight: bold;
+    padding: 5px;
+    width:179px;
+    text-align:right;
+    float:left;
+    height: 30px;
+}
+.req_partition .empty {
+    background: none repeat scroll 0 0 #EEEEEE;
+}
+.req_partition .rightfield {
+    background: none repeat scroll 0 0 #EEEEEE;
+    border-right: 1px solid #FFFFFF;
+    border-top: 1px solid #FFFFFF;
+    color: #333333;
+    padding: 5px;
+    text-align:left;
+    width:267px;
+    float:left;
+    height: 30px;
+}
+.req_partition .rowSpan {
+    background: none repeat scroll 0 0 #EEEEEE;
+    border-right: 1px solid #FFFFFF;
+    border-top: 1px solid #FFFFFF;
+    color: #333333;
+    padding: 5px;
+    text-align:left;
+    width:457px;
+    float:left;
+    height: 30px;
+}
+/* error messages */
+.alertError {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: none;
+    color: #cc0000;
+    line-height: 24px;
+    min-height:24px;
+    padding-left:30px;     
+    background-position: left top;        
+    position: relative;  background-repeat: no-repeat;
+    clear:both;
+}
+
+.alertCustomCatalogError {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: none;
+    color: #cc0000;
+    line-height: 24px;
+    min-height:24px;
+    padding-left:30px;      
+    position: relative;  background-repeat: no-repeat;
+    clear:both;
+}
+.successUpdated {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-style: italic;
+    font-weight: bold;
+    color: #58a618;
+    line-height: 24px;
+    min-height:24px;
+    padding-left:30px;
+    background-position: left top;    
+    position:relative; background-repeat: no-repeat;
+    clear:both;
+
+}
+.noticeAlert {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-style: italic;
+    font-weight: bold;
+    color: #cc0000;
+    text-decoration: none;
+    line-height: 24px;
+    min-height:24px;
+    padding-left:25px;      
+    background-position: left 5px;
+    position: relative;  background-repeat: no-repeat;
+    clear:both;
+}
+
+.errorField {
+    border-color: #CC0000 !important;
+    border-style: solid;
+    border-width: 1px;
+}
+
+/* common divider */
+.divider {
+    border-color: #DDDDDD;
+    border-right: medium none;
+    border-style: solid none none;
+    border-width: 1px medium medium;
+    height: 1px;
+    margin-bottom: 10px;       
+}
+/* framework icons */
+.frameworkIcons {
+    height: 16px;
+    width: 16px;
+}
+.frameworkIcons:hover {
+    opacity:0.5;
+    filter:alpha(opacity=60);
+    pointer: hand;
+}
+.imageLocation{
+    height: 16px;
+    width: 16px;
+    vertical-align: top;
+    padding-right: 4px;
+}
+#displayHeaderFooter {
+    display:none;
+}
+.subHeader{
+    color: #333333;
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/** wide options select box **/
+
+.selectWideDiv{
+    width:140px; border:solid 1px #d2d2d2; position: relative;overflow:hidden;
+}
+.selectWideDiv .selectWideImg{
+    background: #FFFFFF;
+    padding: 5px 4px;
+    padding-top:7px;
+    position: absolute;
+    right: -1px;
+    top: 1px;
+    margin:0;
+}
+
+.selectWideDiv select {
+    margin:0;
+    min-width:200px;
+}
+
+.selectWide{
+    width:150px;
+} 
+
+div .selectWide{
+    border: 1px solid #D2D2D2;
+}
+
+
+
+/* Force word wrap */
+.word-wrap {    
+    white-space: pre;
+    white-space: -moz-pre-wrap; /* Mozilla */
+    white-space: -hp-pre-wrap; /* HP printers */
+    white-space: -o-pre-wrap; /* Opera 7 */
+    white-space: -pre-wrap; /* Opera 4-6 */
+    white-space: pre-wrap; /* CSS 2.1 */
+    white-space: pre-line; /* CSS 3 (and 2.1 as well, actually) */
+    word-wrap: break-word; /* IE */
+    _white-space: pre; /* IE hack to re-specify in addition to word-wrap */
+    width:150px;
+    overflow:hidden;
+}

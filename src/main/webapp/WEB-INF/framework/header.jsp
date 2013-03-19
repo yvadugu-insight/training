@@ -13,7 +13,9 @@
 	    <!-- <strong>This is Main Header for total Page.</strong> -->
 	    <div class="headerContentMainDiv">
 	       <div class="logoDiv left">
-	           <img alt="Pixel Train QA Brains Logo" src="${fileServer}/resources/assets/images/trainLogo1.png" title="QA-Brains">
+	          <a href="/training/">
+	          	 <img alt="Pixel Train QA Brains Logo" src="${fileServer}/resources/assets/images/trainLogo1.png" title="QA-Brains">
+	          </a>	 
 	       </div>
 	       <div class="headerInfoRight left">
 	            &nbsp;

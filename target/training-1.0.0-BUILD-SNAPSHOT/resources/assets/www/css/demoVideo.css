@@ -1,0 +1,12 @@
+@CHARSET "ISO-8859-1";
+
+/* .demoVideoContent {
+	padding :10px;	
+}
+.videoPlayerDiv .videoPlayerDescDiv{
+	padding :10px;
+} */
+
+.videoPlayerDiv ui-dialog .ui-dialog-content{	
+padding: 0px 0px 0px 0px ;
+}
